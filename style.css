@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+US+Trad:wght@100..400&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: "Playwrite US Trad", cursive;
+}
+.container {
+  padding: 1rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+.container .row {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 1rem;
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgb(181, 181, 181);
+}
+.container .row .item-1 {
+  grid-column: 1/3;
+  background-color: rgb(155, 35, 159);
+  position: relative;
+  
+}
+.row .item-1 h2 {
+  position: relative;
+  z-index: 1;
+}
+
+.container .row .item-3 {
+  grid-column: 4/5;
+  grid-row: 1/3 ;
+  background-color: aliceblue;
+} 
+.container .row .item-2 {
+background-color: rgb(63, 95, 122);
+}
+.container .row .item-4 {
+  background-color: rgb(208, 208, 208);
+
+}
+
+.container .row .item-5 {
+  grid-column: 2/4;
+  background-color: rgb(70, 70, 91);
+ }
+ .row .item {
+  padding: 20px;
+  border-radius: 10px;
+ }
+
+ .item .avatar {
+  display: flex;
+  align-items: center; 
+   }
+
+ .item .avatar>img {
+  border-radius: 100%;
+  border: solid rgb(62, 24, 101);
+  margin-right:15px;
+  width: 45px;
+ }
+ 
+ .item-1 h3 ,.item-2 h3 ,.item-5 h3{
+color: rgb(244, 240, 235);
+font-size: 15px;
+ }
+ .item-1 .avatar p ,.item-2 .avatar p ,.item-5 .avatar p{
+opacity: 70%;
+margin-top: 3px;
+color: rgb(174, 174, 174);
+ }
+ .row .item-1 .image {
+  position: absolute;
+  top: 0;
+  right: 100px;
+  width: 120px;
+  z-index: 0;
+ }
+ .item-1 h2 ,.item-2 h2 ,.item-5 h2 {
+  font-size: 20px;
+  margin: 10PX 0;
+
+ }
+ .item-1 .des,
+ .item-2 .des,
+.item-5 .des{
+  color: rgb(165, 164, 164);
+   }
+   .item-3 .avatar p ,.item-4 .avatar p{
+    opacity: 40%;
+margin-top: 3px;
+color: rgb(40, 39, 39);
+   }
+   .item-4 h3 ,.item-3 h3 {
+    color: rgb(34, 11, 65);
+    font-size: 15px;
+     }
+     .item-4 h2 ,.item-3 h2 {
+      font-size: 20px;
+      margin: 10PX 0;
+     }
+/* responsive */
+@media (max-width: 990px) {
+
+
+  .container .row {
+    grid-template-columns:1fr ;
+     }
+    
+     .container .row .item-5 ,.container .row .item-1, .container .row .item-3{
+      grid-row: auto;
+      grid-column: auto;
+     }
+     .row .item-1 .image{
+      width:70px;
+      top: 20px;
+      right:30px;
+
+     }
+
+}
